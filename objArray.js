@@ -14,3 +14,11 @@ console.log(car.color);
 
 car.color = "black"
 console.log(car.color);
+console.log(car);
+
+
+// arrays
+
+const cars = [null];
+console.log(cars);
+console.log(cars[1]);
