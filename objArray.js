@@ -22,3 +22,13 @@ console.log(car);
 const cars = [null];
 console.log(cars);
 console.log(cars[1]);
+
+
+var undef = null;
+console.log(undef);
+undef = "this is not null"
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+
+
+// array operations
