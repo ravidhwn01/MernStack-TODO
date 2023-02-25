@@ -46,7 +46,13 @@ favcolor:'blue'},
 ]
 
 console.log(users);
-const usu = users.map(us =>
-    us.age = 12)
-    console.log(users);
-    console.log(usu);
+// const usu = users.map(us =>
+//     us.age = 12)
+//     console.log(users);
+//     console.log(usu);
+
+
+console.log(users.filter(us => us.favcolor)
+); 
+
+
