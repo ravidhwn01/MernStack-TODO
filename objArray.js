@@ -32,3 +32,21 @@ console.log(Number.MIN_VALUE);
 
 
 // array operations
+
+const users  = [
+    {name:'ravi',
+age:21,
+favcolor:'red'},
+    {name:'raju',
+age:23,
+favcolor:'black'},
+    {name:'kalu',
+age:31,
+favcolor:'blue'},
+]
+
+console.log(users);
+const usu = users.map(us =>
+    us.age = 12)
+    console.log(users);
+    console.log(usu);
