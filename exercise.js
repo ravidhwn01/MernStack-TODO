@@ -23,19 +23,27 @@ console.log(ages);
 // 4. Get average age
 let count = 0;
 let totalAge = 0;
-const avgages =  members.forEach((age) => {
-   return age.age
-    // if(age.age){
-    //     totalAge += age.age;
-    //     count++;
-    // }
+ members.forEach((age) => {
+   
+    if(age.age){
+        totalAge += age.age;
+        count++;
+    }
 })
-console.log(avgages);
-// const avgAge = totalAge / count;
-// console.log(avgAge);
+
+const avgAge = totalAge / count;
+console.log(avgAge);
 
 
 
 // 5. Get Person with maximum age
 
+const personWithMaxAge = members.reduce((maxAgePerson, currentPerson) => {
+  if (!maxAgePerson.age || (currentPerson.age && currentPerson.age > maxAgePerson.age)) {
+    return currentPerson;
+  } else {
+    return maxAgePerson;
+  }
+});
 
+console.log(personWithMaxAge);
