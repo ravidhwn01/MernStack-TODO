@@ -56,3 +56,5 @@ console.log(users.filter(us => us.favcolor)
 ); 
 
 
+const arr = users.map(us => us.favcolor = "yellow")
+console.log(users);

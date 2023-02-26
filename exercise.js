@@ -47,3 +47,57 @@ const personWithMaxAge = members.reduce((maxAgePerson, currentPerson) => {
 });
 
 console.log(personWithMaxAge);
+// 
+// Q-6
+
+// const ageGroups = members.reduce((groups, currentPerson) => {
+//   if (currentPerson.age && currentPerson.age < 35) {
+//     groups['young'].push(currentPerson);
+//   } else if (currentPerson.age && currentPerson.age >= 35) {
+//     groups['old'].push(currentPerson);
+//   } else {
+//     groups['noage'].push(currentPerson);
+//   }
+//   return groups;
+// }, { young: [], old: [], noage: [] });
+
+// console.log(ageGroups);
+const ageGrp = members.reduce((grp,currperson)=>{
+  if(currperson.age&&currperson.age>35){
+    grp['young'].push(currperson);
+  }
+  else if(currperson.age&&currperson.age<=35){
+    grp['old'].push(currperson)
+  }
+  else{
+    grp['noage'].push(currperson)
+  }
+  return grp;
+},{young:[],old:[],noage:[]});
+console.log(ageGrp);
+
+// Q7
+
+const newMember = { name: 'ravi kumar', age: 21 };
+members.splice(2, 0, newMember);
+console.log(members);
+
+// Q8
+const [first, second,...rest] = members;
+console.log(first, second);
+console.log(rest);
+
+// Q9
+const newmbr = { name: 'kallu', age: 18 };
+const newMembers = [newmbr, ...members];
+console.log(newMembers);
+
+
+const person = { name: 'John', age: 30, city: 'New York' };
+
+const { fname, age } = person;
+
+console.log(fname); // 'John'
+console.log(age); // 30
+
+
