@@ -9,22 +9,23 @@ console.log(_);
  
 // Javascript Exercise
 
-// const members = [
-//   {name: 'Vijay Gupta', age: 20},
-//   {name: 'Yash Jangid', age: 40},
-//   {name: 'Firoz Khan', age: 41},
-//   {name: 'Amrit Srivastava', age: 17},
-//   {name: 'Chandraprakash Sharma'},
-//   {name: 'Swpril Ahuja', age: 45},
-//   {name: 'Yogesh Khatri', age: 51}
-// ];
+const members = [
+  {name: 'Vijay Gupta', age: 20},
+  {name: 'Yash Jangid', age: 40},
+  {name: 'Firoz Khan', age: 41},
+  {name: 'Amrit Srivastava', age: 17},
+  {name: 'Chandraprakash Sharma'},
+  {name: 'Swpril Ahuja', age: 45},
+  {name: 'Yogesh Khatri', age: 51}
+];
+
 // 1. Get array of first names of everyone
 // 2. Make everyone's last names in UPPERCASE in given array of objects
 // 3. Get entries where age is between 41-60
 // 4. Get average age
 // 5. Get Person with maximum age
 // 6. Divide persons in three groups, result should look like
-//     {
+//     ++{
 //       'young': [],
 //       'old': [],
 //       'noage': []
